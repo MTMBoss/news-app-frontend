@@ -20,7 +20,7 @@
 
     <script>
         async function fetchUpdates() {
-            const response = await fetch('https://[YOUR_BACKEND_URL]/updates'); // Sostituisci [YOUR_BACKEND_URL] con l'URL del tuo backend su Vercel
+            const response = await fetch('https://news-app-backend-ashy.vercel.app/updates');
             const data = await response.json();
             document.getElementById('timestamp').innerText = `Ultima scansione effettuata alle: ${data.last_scan}`;
             
@@ -39,4 +39,3 @@
     </script>
 </body>
 </html>
-
